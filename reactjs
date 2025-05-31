@@ -1,0 +1,149 @@
+This is reactjs code for implementing band new mobile application!!!!
+
+Cheers,
+Saikumar
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js
+│   ├── NewApplicationForm.js
+│   └── index.js
+
+
+import React from 'react';
+import './App.css';
+import NewApplicationForm from './NewApplicationForm';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>New Application Portal</h1>
+      <NewApplicationForm />
+    </div>
+  );
+}
+
+export default App;
+
+
+import React, { useState } from 'react';
+
+function NewApplicationForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    type: 'Job',
+    description: ''
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Submitted Data:', formData);
+    setSubmitted(true);
+    setFormData({ name: '', email: '', type: 'Job', description: '' });
+  };
+
+  return (
+    <div>
+      {submitted && <p style={{ color: 'green' }}>Application submitted!</p>}
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Name:</label>
+          <input name="name" value={formData.name} onChange={handleChange} required />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input name="email" type="email" value={formData.email} onChange={handleChange} required />
+        </div>
+        <div>
+          <label>Application Type:</label>
+          <select name="type" value={formData.type} onChange={handleChange}>
+            <option value="Job">Job</option>
+            <option value="Project">Project</option>
+            <option value="Inquiry">Inquiry</option>
+          </select>
+        </div>
+        <div>
+          <label>Description:</label>
+          <textarea name="description" value={formData.description} onChange={handleChange} />
+        </div>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  );
+}
+
+export default NewApplicationForm;
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './App.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>New Application</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+}
+
+.App {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+
+npx create-react-app my-app
+cd my-app
+
+
+npm start
+

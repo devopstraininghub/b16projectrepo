@@ -1,0 +1,70 @@
+This is python web application code for implementing web app!!!!
+
+Cheers,
+Saikumar
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+from flask import Flask, render_template_string, request, redirect, url_for
+
+app = Flask(__name__)
+
+# In-memory storage for tasks
+tasks = []
+next_id = 1
+
+# HTML template using Jinja2
+template = """
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>To-Do List</title>
+    <style>
+      body { font-family: Arial; padding: 20px; }
+      h1 { color: #333; }
+      ul { list-style: none; padding: 0; }
+      li { padding: 5px 0; }
+      form { margin-bottom: 20px; }
+      .delete-btn { color: red; text-decoration: none; margin-left: 10px; }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <form method="POST" action="{{ url_for('add_task') }}">
+      <input name="task" placeholder="New task..." required>
+      <button type="submit">Add</button>
+    </form>
+    <ul>
+      {% for task in tasks %}
+        <li>
+          {{ task['name'] }}
+          <a class="delete-btn" href="{{ url_for('delete_task', task_id=task['id']) }}">[Delete]</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
+"""
+
+@app.route('/')
+def index():
+    return render_template_string(template, tasks=tasks)
+
+@app.route('/add', methods=['POST'])
+def add_task():
+    global next_id
+    task_name = request.form['task']
+    if task_name:
+        tasks.append({'id': next_id, 'name': task_name})
+        next_id += 1
+    return redirect(url_for('index'))
+
+@app.route('/delete/<int:task_id>')
+def delete_task(task_id):
+    global tasks
+    tasks = [t for t in tasks if t['id'] != task_id]
+    return redirect(url_for('index'))
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
