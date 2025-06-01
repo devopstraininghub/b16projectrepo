@@ -1,0 +1,12 @@
+nitialize repo	git init
+Clone repo	git clone <url>
+Check status	git status
+Add changes	git add <file>
+Commit changes	git commit -m "message"
+Push to remote	git push origin <branch>
+Pull from remote	git pull origin <branch>
+View log	git log
+Create branch	git branch <name>
+Switch branch	git checkout <name> or git switch <name>
+Merge branches	git merge <branch>
+Stash changes	git stash
