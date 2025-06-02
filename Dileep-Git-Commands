@@ -1,0 +1,18 @@
+
+git init
+
+git status
+
+git add .
+
+git commit -m "message"
+
+git branch
+
+git branch <branchName>
+
+git checkout <branchName>
+
+git clone <git-url>
+
+git push origin <branchName>
