@@ -102,8 +102,11 @@ Scenarios Covered in class :
 
 
 ADDING THE FILE 
+
 MODIFING THE FILE 
-DELETING THE FILE 
+
+DELETING THE FILE
+ 
 ==================================
 
 Working as a Team in Project :
@@ -111,16 +114,26 @@ Working as a Team in Project :
 git clone https://github.com/devopstraininghub/b16projectrepo.git
 
 ls
+
 cd b16projectrepo
+
 touch Ramani 
+
 git add .
+
 git status
+
 git commit -m "Ramani commit" 
+
 git log
+
 git push 
+
 =========================
-git pull --rebase 
+git pull --rebase
+ 
 git push 
+
 ================================
 
 date 30 May:
@@ -128,13 +141,16 @@ date 30 May:
 GIT BRANCH :
 
 git branch
+
 git branch <br.name> 
+
 git checkout <br.name> 
 
 ---
 ---
 
 git checkout main/master
+
 git merge <br.name> 
 
 git branch -d <br.name> 
