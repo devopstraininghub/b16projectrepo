@@ -21,32 +21,47 @@ TO CREATE FIELS
 
 
 touch madhu 
+
 touch <fname>
+
 touch file1 file2 file3 ...file-n
 
 TO CREATE DIRECTORY:
+
 mkdir <dir>
+
 mkdir dir1 dir2 dir3 
+
 pwd
     - /c/Users/Dell/Desktop/27may25
+
 Delete 	
+
 rm -rf fname/dirname
 
 TO view:
+
 ls
+
 ll
+
 ls -lrth 
+
 ls -la 
 
 cd dirname
+
 cd ..
 =============================================================
 clear 
+
 ctrl + L 
 
 
 cat <fname>
+
 history
+
 =====================================
 date : 28 may 25
 
@@ -54,13 +69,17 @@ git init  ---> empty repo
 
 
 git config --global user.name "KIRAN MADHU"
+
 git config --global user.email "kiranmadhu@gmail.com"
 
 touch file1
 
 git status -- red (untracked)
+
 git add fname 
+
 git status  --> green 
+
 git commit -m "msg" fname
 
 
