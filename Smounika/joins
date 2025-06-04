@@ -1,0 +1,3 @@
+SQL joins are operations used to combine rows from two or more tables based on a related column between them.
+They enable querying data across multiple tables by establishing logical relationships, typically through matching key values. 
+Joins are fundamental for retrieving meaningful, integrated data from relational databases.
