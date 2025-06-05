@@ -1,9 +1,0 @@
-SQL constraints are rules enforced on table columns to ensure data integrity and consistency. They define valid data types and relationships, helping maintain accuracy in a database.
-
-Types of SQL Constraints:
-NOT NULL
-UNIQUE
-DEFAULT
-CHECK
-PRIMARY KEY
-FOREIGN KEY
