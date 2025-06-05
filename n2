@@ -1,0 +1,14 @@
+git branch bn
+git checkout bn
+git  branch -r
+git branch -a
+git checkout -b bn
+git branch -d bn
+git branch -D bn
+git push origin bn
+git push -u origin bn
+git branch -m newbn
+git branch -m oldbn newbn
+
+
+git merge 
