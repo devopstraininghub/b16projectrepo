@@ -1,0 +1,13 @@
+touch file
+mkdir dir1
+cd ..
+cd filename
+rm fn
+rm -rf dir
+git add fn
+git add .
+git commit -m "fn is added"
+git push
+git pull --rebase
+
+git push origin Branchname
