@@ -1,0 +1,4 @@
+# Write a python code to print reverse string?
+def reverse_string(str):
+    return str[::-1]
+print(reverse_string("Hello Murali")
