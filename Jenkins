@@ -1,0 +1,53 @@
+1. What is Jenkins?
+Jenkins is an open-source automation tool. It helps automate tasks like building, testing, and deploying code. It is widely used for Continuous Integration (CI) and Continuous Delivery (CD).
+
+2. Why is Jenkins used in DevOps?
+Jenkins helps developers:
+
+Automatically test and build code
+
+Detect bugs early
+
+Deploy software faster and more reliably
+
+3. What is a Jenkins pipeline?
+A pipeline is a series of steps written in code (usually a Jenkinsfile) that tells Jenkins how to build, test, and deploy your application.
+
+4. What is a Jenkins job?
+A job is a task or project in Jenkins. It can be a simple build or a full pipeline. Jenkins runs jobs automatically based on triggers like code changes.
+
+5. What is the difference between freestyle job and pipeline job?
+Freestyle Job: A basic, GUI-based job with simple steps.
+
+Pipeline Job: Code-based, flexible, supports complex workflows and automation.
+
+6. What are common Jenkins plugins?
+Popular plugins include:
+
+Git Plugin (for Git integration)
+
+Maven Plugin (for Java builds)
+
+Docker Plugin
+
+Pipeline Plugin
+
+Slack Notification Plugin
+
+7. How does Jenkins integrate with Git?
+You connect Jenkins to a Git repository (GitHub, GitLab, etc.). Jenkins can then:
+
+Pull code automatically
+
+Trigger builds on every commit
+
+8. What is a Jenkinsfile?
+A Jenkinsfile is a script file (written in Groovy) that defines the steps of a pipeline. It lives in your project’s repository.
+
+9. What is Continuous Integration (CI)?
+CI is the practice of regularly merging code into a shared branch and testing it automatically. Jenkins helps by running tests every time code is pushed.
+
+10. What is Continuous Deployment (CD)?
+CD means automatically deploying code to production after successful testing. Jenkins can be used to automate this whole process.
+
+

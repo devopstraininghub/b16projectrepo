@@ -1,0 +1,36 @@
+1. What is Git?
+Git is a version control system. It helps track changes in code or files. You can go back to previous versions, work with others, and manage code easily.
+
+2. What is the difference between Git and GitHub?
+Git is the tool used on your computer to manage code.
+
+GitHub is a website where you can store your Git projects online and collaborate with others.
+
+3. What is a repository (repo)?
+A repository is a folder that Git is tracking. It contains your project files and the history of changes.
+
+4. What is the difference between git clone, git pull, and git fetch?
+git clone: Copies an entire repo from GitHub to your computer.
+
+git pull: Downloads changes from GitHub and updates your code.
+
+git fetch: Downloads changes, but doesn’t update your code until you merge.
+
+5. What is git commit?
+git commit saves your changes to the local Git history. It’s like taking a snapshot of your work.
+
+6. What is the difference between git add and git commit?
+git add: Tells Git which changes to track.
+
+git commit: Saves those changes in Git history with a message.
+
+7. What is a branch in Git?
+A branch is like a copy of your code where you can try new changes without affecting the main version. You can merge it later if everything works fine.
+
+8. What is git merge?
+git merge is used to combine changes from one branch into another (usually from a feature branch into the main branch).
+
+9. What is a conflict in Git?
+A conflict happens when two people change the same part of a file. Git can’t decide which change to keep, so you have to fix it manually.
+
+
