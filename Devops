@@ -1,0 +1,50 @@
+1. What is DevOps?
+DevOps is a method that combines software development and IT operations. It helps teams work together to deliver software faster, with fewer errors, and more frequently. It focuses on automation, collaboration, and continuous improvement.
+
+2. Why is DevOps needed?
+DevOps is needed to:
+
+Deliver updates quickly
+
+Reduce bugs in production
+
+Improve communication between teams
+
+Automate manual tasks like testing and deployment
+
+3. What is CI/CD?
+CI (Continuous Integration) means developers regularly merge code into a shared repository, and automated tests are run.
+
+CD (Continuous Delivery or Deployment) means the software is automatically delivered to production or staging after passing tests.
+
+4. What tools are used in DevOps?
+Some popular tools include:
+
+Git for version control
+
+Jenkins for CI/CD
+
+Docker for containers
+
+Kubernetes for managing containers
+
+Ansible or Terraform for infrastructure setup
+
+Prometheus and Grafana for monitoring
+
+5. What is Docker?
+Docker is a tool that puts software into containers. These containers have everything needed to run the app, so it works the same everywhere — on a developer's laptop or a server.
+
+6. What is Kubernetes?
+Kubernetes is a system that manages and runs many containers. It helps in scaling, updating, and keeping applications running smoothly without manual effort.
+
+7. What is Infrastructure as Code (IaC)?
+IaC means writing code to set up servers and environments instead of doing it manually. Tools like Terraform or Ansible are used for this.
+
+8. How do Dev and Ops teams work together in DevOps?
+They share responsibility. Developers write code and help automate deployment. Operations manage the servers and infrastructure but also work with developers to improve the process.
+
+9. What happens when a deployment fails?
+You check logs, identify the error, and fix the issue. Sometimes, you roll back to the previous working version. Monitoring tools help you understand what went wrong.
+
+
