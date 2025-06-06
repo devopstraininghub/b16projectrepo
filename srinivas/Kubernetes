@@ -20,3 +20,4 @@ Pod is a Kubernetes object. It consists one or multiple containers are created b
 9. kubectl describe pod pod name
 
 Thank you..
+----------------
