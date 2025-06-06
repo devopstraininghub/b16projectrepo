@@ -1,1 +1,22 @@
-Kubernetes is part of devops
+Hi all,
+
+Here is a small info about Kubernetes(K8s)
+
+K8s is a container Optimization tool using for automating software deployment, scaling and management. 
+In K8s, we have Pods.
+
+Pod is a Kubernetes object. It consists one or multiple containers are created by kubernetes. we create the pods, Pods will create the containers.
+
+###Few Commands###
+
+1. kubectl get pod
+2. kubectel get pod -o wide
+3. kubectl get ns
+4. kubectl get configmap
+5. kubectl get configmap -n ns
+6. kubectl get deployment dep.name
+7. kubectl get services
+8. kubectl describe nodes node name
+9. kubectl describe pod pod name
+
+Thank you..
