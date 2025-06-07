@@ -1,0 +1,102 @@
+Merge -> combining both branches as per commits, complex, but commit history is clear, opens vi editor for merge commit message, a merge id created.
+Rebase -> combining both branches as per rebase, i.e., main branch will sit on release branch, ordered but commit history is not clear, no merge id created
+
+
+Merge:
+
+UX506505@DESKTOP-LPUA2M8: merge_rebase (main) $ ls
+prince1  prince2  prince3
+
+UX506505@DESKTOP-LPUA2M8: merge_rebase (release) $ ls
+charu1  charu2  prince1
+
+after merging:
+UX506505@DESKTOP-LPUA2M8: merge_rebase (main) $ ls
+charu1  charu2  prince1  prince2  prince3
+
+Merge as per commit history:
+UX506505@DESKTOP-LPUA2M8: merge_rebase (main) $ git log -8
+commit 0b34abe446871e3f05cecc49190daa9d74f36349 (HEAD -> main)
+Merge: 528a7b4 9d9dfeb
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 07:54:35 2025 +0530
+
+    merging release and main branches: Merge branch 'release'
+
+commit 528a7b4bee9aae9e2a5c2f9c7908ba477395bbe1
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 07:49:40 2025 +0530
+
+    prince3 file
+
+commit 9d9dfeb988bb46bf1c0e47b5cddb3fbfcacf17b9 (release)
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 07:48:50 2025 +0530
+
+    charu2 file
+
+commit 1d87d2157487dc3a05915c86060a548a4b43725b
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 07:48:02 2025 +0530
+
+    prince2 file
+
+commit 26855bf2a041739b680a09617c29f9bc5901c5f5
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 07:46:15 2025 +0530
+
+    charu1 file
+
+commit bd5c62681738f83477053063ef51e6277ccd1f27
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 07:45:12 2025 +0530
+
+    prince1 file
+
+
+Rebase:
+
+UX506505@DESKTOP-LPUA2M8: merge_rebase (main) $ ls
+hello1  hello2  hello3
+
+UX506505@DESKTOP-LPUA2M8: merge_rebase (release) $ ls
+hello1  world1  world2
+
+after rebase:
+UX506505@DESKTOP-LPUA2M8: merge_rebase (main) $ ls
+hello1  hello2  hello3  world1  world2
+
+Rebase as per main branch history rebasing/sit on top of release branch history:
+UX506505@DESKTOP-LPUA2M8: merge_rebase (main) $ git log -7
+commit 3140082b8b931c924e8060611b89fcb9b711fe80 (HEAD -> main)
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 08:06:37 2025 +0530
+
+    hello3 file
+
+commit 8796f24ee82651a803a24f6c0be70078b1f5d392
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 08:04:37 2025 +0530
+
+    hello2 file
+
+commit a5c7f25defd7ea26e05fd335120b5e4693388b0c (release)
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 08:06:35 2025 +0530
+
+    world2 file
+
+commit 6f443c64fd311abd67439bcd215fe5d316ac1919
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 08:03:50 2025 +0530
+
+    world1 file
+
+commit dfdef2ba98ceacb312398a79bf9bad1126f01ad4
+Author: pichuka123 <prince.charu7@gmail.com>
+Date:   Sat Jun 7 08:02:40 2025 +0530
+
+    hello1 file
+
+
+

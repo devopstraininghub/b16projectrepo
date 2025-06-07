@@ -12,22 +12,22 @@ DevOps Evolution
 27MAY25:
 linux BASICS:
 
-TO CREATE FIELS 
+*TO CREATE FIELS* 
 
 
 touch madhu 
 touch <fname>
 touch file1 file2 file3 ...file-n
 
-TO CREATE DIRECTORY:
+*TO CREATE DIRECTORY:*
 mkdir <dir>
 mkdir dir1 dir2 dir3 
 pwd
     - /c/Users/Dell/Desktop/27may25
-Delete 	
+*Delete* 	
 rm -rf fname/dirname
 
-TO view:
+*TO view:*
 ls
 ll
 ls -lrth 
@@ -87,6 +87,8 @@ git status
 git log 
 
 git push 
+
+-----> XXXXXXXXXXXghp_EKltMv35HgrC
 
 ==============================
 29 MAY 25
@@ -226,4 +228,116 @@ git log --since "06-03-2025"
            The date format used here is "MM-DD-YYYY"
 
 ======================
+git config --global user.user mcuser
+git config --global user.email mcuser@gmail.com
 git config --list 
+
+========================
+
+Alias 
+-----
+git status  ---> git s 
+
+
+git config --global alias.s "status"
+git config --global alias.s "status"
+git s
+
+git log
+git config --global alias.l "log"
+git l
+
+
+git log --oneline
+git config --global alias.lo "log --oneline"
+git lO
+ 
+======
+git config --global --unset alias.s
+
+
+==============================
+
+amend
+-----
+git commit --amend -m "label" -m "label2" -m "label3"
+
+====================================
+========================
+git config --list 
+
+========================
+
+============================
+
+amend
+-----
+git commit --amend -m "label" -m "label2" -m "label3"
+
+====================================
+only for modified files :
+
+git commit -am "messgae"
+
+=======================================
+
+revert
+------
+
+======================================  
+git reset :
+
+git reset HEAD fname ---> staging to WS 
+
+git reset --soft cid (n-1)  ----> LR to Staging
+
+git reset --mixed cid (n-1) ----> LR to Workspace 
+
+
+=============================
+git tag
+
+git tag <t.name> 
+git checkout <t.name> 
+
+git tag -d <tag.name> 
+
+git push origin <tag.name>
+git push origin -d <tag.name> 
+
+
+
+
+
+TAG :
+
+git tag 
+
+git tag <tag.name>
+git checkout <tag.name>
+
+git push origin <t.name>
+
+git tag -d <t.name>
+
+git push origin -d  <t.name>
+
+================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
