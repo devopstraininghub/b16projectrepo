@@ -1,0 +1,53 @@
+Here’s a simple and clean example of an HTML code snippet to create a basic webpage:
+
+Copy the code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+    <main>
+        <p>Hello! This is a simple webpage created using HTML and a bit of CSS for styling. Feel free to customize it!</p>
+        <p>HTML is fun and easy to learn. Start experimenting with your own designs!</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+This code creates a basic webpage with a header, main content area, and footer. It also includes some inline CSS for styling. You can modify the content and styles to suit your needs!
