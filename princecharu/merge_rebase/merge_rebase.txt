@@ -1,4 +1,4 @@
-Merge -> combining both branches as per commits, complex, but commit history is clear, opens vi editor for merge commit message, a merge id created.
+Merge -> combining both branches as per commits, it's complex, but commit history is clear, opens vi editor for merge commit message, a merge id created.
 Rebase -> combining both branches as per rebase, i.e., main branch will sit on release branch, ordered but commit history is not clear, no merge id created
 
 
