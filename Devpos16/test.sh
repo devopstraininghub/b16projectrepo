@@ -1,1 +1,0 @@
-echo "welcome to devops"
