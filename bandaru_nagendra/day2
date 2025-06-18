@@ -1,0 +1,46 @@
+
+Day 2 Git commands:
+
+cat "file name" --> to view the inside content of file.
+
+to initialize local repo for practice.
+
+git init
+
+ls -la use this command and check hidden files of git dash
+
+how to create git user account?
+
+git config --global user.name "Nagendra"
+
+git config -- global user.email "sysadmtodevops@gmail.com"
+
+Main git commands
+
+1 --> git add . this command push all files into the work space
+
+  --> git add "file name" this command work for dedicated file.
+
+2 --> git commit -m "message of your file"
+
+3 --> git push
+
+and when we are using above 3 commands for git based on work we will use few more commands like below.
+
+git status --> when you are executed this command we can find out tracked "Green" or untracked "Red" files in our repos 
+
+git log
+
+git show "commit id"
+
+---------------------------------
+
+GIT full form: Global information traker
+
+git is a version control system or source control management system
+
+GUI: Graphical user interface
+
+CLI: Command line interface
+
+
