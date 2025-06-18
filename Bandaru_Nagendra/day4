@@ -33,10 +33,12 @@ ex: git checkout main
 
 ex: git checkout master
 
-for deletaion of git existed or newly created branches, use below cmd's.
+for deletaion of git existed or newly created branches in your local repo, use below cmd's.
 
 cmd: git branch -d "branch name" -->  small "d" for normal deletion.
 
 cmd: git branch -D "branch name" --> it is for forcefully delation of selected branch.
+
+
 
 
