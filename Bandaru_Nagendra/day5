@@ -1,0 +1,44 @@
+Day 5 git commands related VI/VIM or Nano editors
+
+how to open vi editor in git bash
+
+cmd: vim filename
+
+ex: vim day1 --> enter
+
+once vi editor opens press 
+
+esc and i "insert" --> enter
+
+and you can add your data. once it is done use below different cmds
+
+:w --> edited data save.
+
+:q --? quit vi edior
+
+:wq --> save + quit
+
+:w fname -> save as a file name
+
+:q! --> quit discarding mode
+
+:w! --> save as a no-writeable file
+
+---------------------------------------------
+
+cherry pic concept
+
+cmd: git cherry -pick cid (commit id)
+
+when you are merging data from branches that you don't wan't entire data. and to overcome this you will use your commit id to merge required data.
+
+-------------------------------------------
+
+git conflict:
+
+assume you are merging two branches and both branches are same for one file and we cannot merge data in that time we will get the conflict notification for choosing the file which one you want and based on  cid's we need to select one file finally.
+
+
+
+
+
