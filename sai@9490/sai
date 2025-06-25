@@ -1,0 +1,15 @@
+Some advanced questions on docker asked to me in interviews:
+How to run multiple docker compose on same machine
+What is build context
+What is run context
+Flow of request when you type docker commands
+How to connect to different daemons on demand through same docker client
+Env vs Build arguments
+How to pass arguments to containers which do not get persisted in the containter after build stage
+How env is different than arg 
+What is —build-arg 
+What are docker buildx
+What is scratch image
+What is distroless image
+How do you mount a docker secret
+Restart policy in docker
