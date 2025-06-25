@@ -1,0 +1,20 @@
+In Day 6:
+
+we have practiced below 
+
+git branch creations and deletion
+
+git merge conflicts and over come
+in both main and sub branch having the same file name but different data that merge will throuht the conflict error to avoid that error we need to select which CID is need to merge. 
+
+file and branch name both are same that timegit will confuge to checkout brach to avoid this isse we need to use 
+git checkout branchname --
+
+to view central repo existed branches in local repo 
+
+git branch -r
+
+to view local repo existed or created branches
+
+git branch -a
+
