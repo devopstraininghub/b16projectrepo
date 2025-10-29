@@ -1,0 +1,9 @@
+git init
+
+git add file_name
+
+git add .
+
+git commit -m "message"
+
+git push origin main
