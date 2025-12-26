@@ -1,0 +1,318 @@
+DAY -0 
+26 MAY 2025:
+
+DevOps Evolution
+- Waterfall model 
+- Agile model
+- DevOps Approach
+- Cloud Intro 
+
+===============================
+
+27MAY25:
+linux BASICS:
+
+TO CREATE FIELS 
+
+
+touch madhu 
+touch <fname>
+touch file1 file2 file3 ...file-n
+
+TO CREATE DIRECTORY:
+mkdir <dir>
+mkdir dir1 dir2 dir3 
+pwd
+    - /c/Users/Dell/Desktop/27may25
+Delete 	
+rm -rf fname/dirname
+
+TO view:
+ls
+ll
+ls -lrth 
+ls -la 
+
+cd dirname
+cd ..
+=============================================================
+clear 
+ctrl + L 
+
+
+cat <fname>
+history
+=====================================
+date : 28 may 25
+
+git init  ---> empty repo 
+
+
+git config --global user.name "KIRAN MADHU"
+git config --global user.email "kiranmadhu@gmail.com"
+
+touch file1
+
+git status -- red (untracked)
+git add fname 
+git status  --> green 
+git commit -m "msg" fname
+
+
+===============
+GH/BITBUCKET  ACCOUNT :
+
+ab.manikanta79@gmail.com
+ab.manikanta79
+Manikantadevops1
+
+=====================
+B16PROJECTREPO 
+
+git clone https://github.com/devopstraininghub/b16projectrepo.git
+
+ll ---> b16projectrepo
+
+cd b16projectrepo
+
+touch files 
+git status ---> red 
+
+git add .  ---> green 
+
+git commit  --> cid 
+
+git status 
+
+git log 
+
+git push 
+
+-----> 
+
+==============================
+29 MAY 25
+
+Scenarios Covered in class :
+
+
+ADDING THE FILE 
+MODIFING THE FILE 
+DELETING THE FILE 
+==================================
+
+Working as a Team in Project :
+
+git clone https://github.com/devopstraininghub/b16projectrepo.git
+
+ls
+cd b16projectrepo
+touch Ramani 
+git add .
+git status
+git commit -m "Ramani commit" 
+git log
+git push 
+=========================
+git pull --rebase 
+git push 
+================================
+
+date 30 May:
+
+GIT BRANCH :
+
+git branch
+git branch <br.name> 
+git checkout <br.name> 
+
+git checkout -b <br.name>
+
+---
+---
+
+git checkout main/master
+git merge <br.name> 
+
+git branch -d <br.name> 
+=========
+
+
+git push https://github.com/devopstraininghub/b16projectrepo.git <br.name> 
+
+
+git push origin brname
+
+git push origin -d 
+
+
+======
+https://www.linkedin.com/posts/madhukiran-gorekar_%F0%9D%90%86%F0%9D%90%A2%F0%9D%90%AD-%F0%9D%90%9A%F0%9D%90%A7%F0%9D%90%9D-%F0%9D%90%86%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%87%F0%9D%90%AE%F0%9D%90%9B-ugcPost-7214915088665694208-L_gI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAOaZKYBgHqqOuWNEMewLeHAlTGV2Ykkh5A
+
+
+================
+
+git - git hub 
+
+Branch : 
+
+======================================================
+
+WINDOWS - notepad , notepad++ , vscode 
+LINUX:  vi/vim , nano 
+
+======
+VIM/ VI editor:
+--
+
+vim madhufile
+--------
+esc -- i   --- > insert mode 
+....
+.... data - xyx 
+....
+
+
+esc :w  (save)
+
+esc :q  (quit) 
+or
+esc :wq
+or
+esc :q!
+
+==================================
+
+git cherry-pic cid 
+
+
+==================
+
+git branch -r 
+git branch -a 
+git checkout branch --
+
+git pull request / merge request . 
+How to raise PR and How to review ?
+
+==================================================
+4 JUNE 2025
+
+
+==============================
+
+
+git merge <br.name> 
+PR (Pull Requests) 
+
+fork - open source project contribution
+
+==============
+
+
+protecting main branch 
+
+==========
+
+FILTERING:
+
+git log --oneline 
+git log --oneline -n 
+git log --author kiran
+git log --since "06-03-2025"
+
+This option filters the commits to only show those that were made after the specified date
+The date format used here is "MM-DD-YYYY"
+
+======================
+git config --global user.user mcuser
+git config --global user.email mcuser@gmail.com
+git config --list 
+
+========================
+
+Alias 
+-----
+git status  ---> git s 
+
+
+git config --global alias.s "status"
+git config --global alias.s "status"
+git s
+
+git log
+git config --global alias.l "log"
+git l
+
+
+git log --oneline
+git config --global alias.lo "log --oneline"
+git lO
+ 
+======
+git config --global --unset alias.s
+
+==============================
+
+amend
+-----
+git commit --amend -m "label" -m "label2" -m "label3"
+
+====================================
+========================
+git config --list 
+
+========================
+
+============================
+
+amend
+-----
+git commit --amend -m "label" -m "label2" -m "label3"
+
+====================================
+only for modified files :
+
+git commit -am "messgae"
+
+=======================================
+
+revert
+------
+
+======================================  
+git reset :
+
+git reset HEAD fname ---> staging to WS 
+
+git reset --soft cid (n-1)  ----> LR to Staging
+
+git reset --mixed cid (n-1) ----> LR to Workspace 
+
+
+=============================
+git tag
+
+git tag <t.name> 
+git checkout <t.name> 
+
+git tag -d <tag.name> 
+
+git push origin <tag.name>
+git push origin -d <tag.name> 
+==========================
+
+TAG :
+
+git tag 
+
+git tag <tag.name>
+git checkout <tag.name>
+
+git push origin <t.name>
+
+git tag -d <t.name>
+
+git push origin -d  <t.name>
+
+================================================
